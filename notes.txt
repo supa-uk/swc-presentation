@@ -1,0 +1,76 @@
+SUPA SWC 2016
+=============
+
+11 and 12 April, 2016.
+
+I got the python version wrong in the instructions email -- should
+have been anaconda3, not 4.  Doh.
+
+The instructions should have included the instruction to download the
+data zip for the Python course.
+
+Got the links to the websites (from the repo) wrong, but this was easy
+to fix.
+
+There turned out to be only two folk who felt uncertain about shell
+stuff, so I worked through that with them while the others worked
+through a plotting-with-python tutorial with demontrator help from
+Sean and Vytautas.
+
+The python course ran out of time before we got to the
+assertion/testing bit.  That's a pity.  Talking about it with Andrew
+and Daniel, it sounded as if a good plan would be to expand the
+assertion/testing bit considerably, and then say to people 'work
+through the first four or five lessons yourself, beforehand'.  That
+means we really want to stress (if only to ourselves) that we're _not_
+teaching folk how to use Python, but how to do tests and assertions.
+
+Sean's link to Python tutorial:
+
+> We can discuss this at the meeting in a few minutes - but I need to
+> send you this link. For the plotting course, if anyone wants to do
+> it, I've found a nice set of tutorials on this page
+> <http://www.labri.fr/perso/nrougier/teaching/matplotlib/>. Unfortunately
+> the Software Carpentry project hasn't got a Python visualisation
+> course yet so I had to look elsewhere.
+>
+> I'd be happy to run through these examples with the students.
+> There is a SUPA Python course, which should be a strong
+> pre-requisite.  Which creates a scheduling dependency.
+
+Mercurial:
+
+  * edit things to deemphasise revert!
+  * `hg config --local` doesn't seem to work on older Mercurial
+    versions (edit `.hg/hgrc` instead)
+  * Mention .hgignore
+  * Include flowchart: edit/commit repeat...
+  * merge tool on OS X is FileMerge
+  * screenshots (ssh:) don't match description, and https://... URLs
+
+
+Lessons
+-------
+
+Yes, this should indeed be in the first semester.  At coffee on the Tuesday, I mentioned the possible rationale for it
+being in semester 2 -- that it gave people a set of bad habits to break, and let them encounter the problems that the
+course was trying to solve -- but the folk there unanimously said that they though tit would be more useful earlier,
+before they had bad habits.
+
+In an email afterwards, Anna Stradomska (who's a lecturer in Chemistry) wrote:
+
+> Here is the link to the Archer Driving Test that I mentioned today:
+> http://www.archer.ac.uk/training/course-material/online/driving_test.php
+> 
+> This is very much HPC-oriented, but I think something similar could be
+> developed for bash and Python basics.
+
+Thanks for this.  I worked through some of the Archer tests, and yes,
+that's a very interesting idea.  We could potentially develop a 'make
+sure you pass this quiz before' and a 'you should be able to pass this
+quiz after' pair.
+
+Sean and Vytautas and I wondered about how better to organise this, in
+particular how better to deal with the fact that we're not aiming to
+teach them Python, but simply aim to use Python as the 'host' language
+for teaching them about unit testing.
