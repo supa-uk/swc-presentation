@@ -1,7 +1,71 @@
-SUPA SWC 2016
-=============
+SUPA SWC presentation notes
+===========================
 
-11 and 12 April, 2016.
+
+19 and 20 January 2017
+----------------------
+
+Decisions since last year:
+
+  * No, this shouldn't be in the first semester (or at least the
+    rationale for it being then is sufficiently weak that it doesn't
+    override the considerable scheduling difficulties that the first
+    semester presents).
+
+  * This doesn't have a strong dependency on the SUPA Python course,
+    since our (now certain) aim is _not_ to teach Python, but simply
+    to use that as an example.  However we shouldn't actually _clash_
+    with the Python course, which Norman signally failed to avoid.
+    Doh!  The clash was harmless, though.
+
+Problems this year:
+
+  * There were two or three times the number of people this year,
+    compared to last, because we included students from Andy Harvey's
+    CDT; and this also meant that the fraction of Windows users was
+    much higher.  This meant that we couldn't treat Windows users as
+    outliers and handle them ad-hoc, and that consumed a good
+    half-hour at the start, and meant we started off with a chaotic
+    feel to the workshop.
+
+  * Windows solutions for the shell module:
+    - Windows Subsystem for Linux: works well (with Windows 10), but
+      requires students to adjust the configuration of their machines.
+    - ssh to brutha via putty
+    - ssh to brutha via a Jupyter notebook running on brutha
+    - cygwin: though that's a rather large install
+
+  * ...and for Mercurial:
+    - OK for those who have a bash shell
+    - problematic for cygwin, since the downloaded mercurial binary,
+      as opposed to the hg binary included in cygwin, doesn't
+      integrate well with Windows authentication, so the `hg push`
+      part of the demo gets messed up (I think that was the diagnosis)
+
+  * ...and for Python:
+    - Daniel used Jupyter, but some folk followed along with files+`python`,
+      perfectly successfully.
+    - Worked OK in WSL, and OK with Windows Python
+
+Lessons:
+
+  * Norman had underestimated how much pre-installation would be
+    necessary (see the above remarks about the Windows fraction).
+    That needs to be thought through more carefully/thoroughly than
+    one might expect.
+
+  * Part of the pre-workshop instructions should be specific actions
+    for Windows users.  Might it be reasonable to _require_ Windows
+    users to be running Windows 10 and have enabled WSL?  Probably, if
+    we include some documentation noting that most of this stuff does
+    work outside of the bash shell, and gesture towards documentation
+    about that.
+
+  * More?
+
+
+11 and 12 April, 2016
+---------------------
 
 I got the python version wrong in the instructions email -- should
 have been anaconda3, not 4.  Doh.
@@ -49,8 +113,7 @@ Mercurial:
   * screenshots (ssh:) don't match description, and https://... URLs
 
 
-Lessons
--------
+**Lessons?**
 
 Yes, this should indeed be in the first semester.  At coffee on the Tuesday, I mentioned the possible rationale for it
 being in semester 2 -- that it gave people a set of bad habits to break, and let them encounter the problems that the
@@ -61,7 +124,7 @@ In an email afterwards, Anna Stradomska (who's a lecturer in Chemistry) wrote:
 
 > Here is the link to the Archer Driving Test that I mentioned today:
 > http://www.archer.ac.uk/training/course-material/online/driving_test.php
-> 
+>
 > This is very much HPC-oriented, but I think something similar could be
 > developed for bash and Python basics.
 
